@@ -21,10 +21,8 @@ import config
 logging.basicConfig(format='%(asctime)s - %(name)s - %(levelname)s - %(message)s', level=logging.INFO)
 
 
-# Задаем область доступа (Scope) для YouTube Data API
-
-
 def authenticate():
+    # Задаем область доступа (Scope) для YouTube Data API
     SCOPES = ['https://www.googleapis.com/auth/youtube.upload']
     
     creds = None
